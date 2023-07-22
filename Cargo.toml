@@ -1,0 +1,15 @@
+[package]
+name = "vault-standard-reference-implementation"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+fuels = { git = "https://github.com/FuelLabs/fuels-rs", branch = "master", features = ["fuel-core-lib"]}
+tokio = "1.28.1"
+
+[[test]]
+harness = true
+name = "integration_tests"
+path = "tests/harness.rs"
